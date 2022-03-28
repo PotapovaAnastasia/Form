@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="title">Способ получения</h2>
+        <div class="city-row">
+            <label class="city"><input type="text" name="city" placeholder="Город" class="city__input"></label>
+        </div>
+        <div class="delivery-row">
+            <label class="delivery1">
+            <select name="delivery" class="delivery">
+                <option value="rospost" class="delivery_item">Почта России</option>
+                <option value="ozon" class="delivery_item">Ozon</option>
+            </select>
+            </label>
+        </div>
+        <div class="adress-row">
+            <label class="adress1"><input type="text" name="street" placeholder="Улица" class="adress__input adress__input1"></label>
+            <label class="adress2"><input type="text" name="house" placeholder="Дом" class="adress__input"></label>
+            <label class="adress2"><input type="text" name="apart" placeholder="Квартира" class="adress__input"></label>
+            <label class="adress2"><input type="text" name="index" placeholder="Индекс" class="adress__input"></label>
+        </div>
+        <div class="komment-row">
+            <label class="komment"><input type="text" name="komment" placeholder="Добавить комментарий" class="komment__input"></label>
+        </div>
+
+        <h2 class="title">Данные получателя</h2>
+        <div class="fio-row">
+            <label class="fio"><input type="text" name="lname" placeholder="Фамилия" class="fio__input"></label>
+            <label class="fio"><input type="text" name="fname" placeholder="Имя" class="fio__input"></label>
+            <label class="fio"><input type="text" name="sname" placeholder="Отчество" class="fio__input"></label>
+        </div>
+        <div class="tel-row">
+            <label class="tel"><input type="tel" name="tel" placeholder="Номер телефона" class="tel__input"></label>
+        </div>
+        <p class="infotext">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</p>
+
+        <div class="email-row">
+            <label class="email"><input type="email" name="email" placeholder="E-mail" class="email__input"></label>
+        </div>
+        <p class="infotext">На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</p>
+
+        <div class="spam-row">
+            <input type="checkbox" id="spam1" name="spam" checked class="custom-checkbox"><label class="spam" for="spam1">Подписаться на рассылку новинок и акций</label>
+        </div>
+
+        <h2 class="title">Способ оплаты</h2>
+        <div class="pay-row">
+            <input type="radio" id="pay1" name="pay" value="offline" class="custom-radio"><label class="pay" for="pay1">Оплата при получении наличными или картой</label><br>
+            <input type="radio" id="pay2" name="pay" value="online" checked class="custom-radio"><label class="pay" for="pay2">Оплата банковской картой онлайн</label>
+        </div>
+    </div>
+
+</body>
+</html>
